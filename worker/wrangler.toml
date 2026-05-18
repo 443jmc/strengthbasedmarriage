@@ -1,0 +1,8 @@
+name = "strengthbasedmarriage-contact"
+main = "src/index.js"
+compatibility_date = "2025-05-01"
+
+# Set these secrets via:
+#   wrangler secret put RESEND_API_KEY
+#   wrangler secret put TO_EMAIL
+#   wrangler secret put FROM_EMAIL
