@@ -287,7 +287,7 @@ ul { list-style: none; }
   aspect-ratio: 3/4;
   object-fit: cover;
   object-position: center top;
-  border-radius: var(--radius-lg);
+  border-radius: 24px;
   box-shadow: var(--shadow-md);
 }
 .about-content p { margin-bottom: 16px; color: var(--color-text-light); }
