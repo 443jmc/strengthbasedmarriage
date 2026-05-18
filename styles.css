@@ -277,6 +277,14 @@ ul { list-style: none; }
   color: var(--color-text-muted);
   gap: 8px;
 }
+.about-photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
 .about-content p { margin-bottom: 16px; color: var(--color-text-light); }
 .about-content .section-title { margin-bottom: 24px; }
 .credentials {
