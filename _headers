@@ -1,0 +1,23 @@
+# Cloudflare Pages cache headers.
+# Goal: visitors always get fresh HTML, but CSS/JS/images can cache.
+
+# Always fetch fresh HTML — prevents stale layouts in Safari & other
+# browsers that cache aggressively.
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# CSS and JS: short cache, must revalidate. Combined with the ?v=
+# query string on <link>/<script> tags, this forces fresh fetches
+# on every deploy while letting unchanged versions stay cached.
+/*.css
+  Cache-Control: public, max-age=300, must-revalidate
+/*.js
+  Cache-Control: public, max-age=300, must-revalidate
+
+# Images / fonts can cache for longer.
+/images/*
+  Cache-Control: public, max-age=86400
