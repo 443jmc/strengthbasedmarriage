@@ -49,7 +49,6 @@ ul { list-style: none; }
 .container-narrow { max-width: 720px; }
 .section { padding: 96px 0; position: relative; }
 .section-alt { background: var(--color-bg-alt); }
-.section-dark { background: var(--color-primary); color: var(--color-bg); }
 .section-prose { padding: 96px 0; }
 .section-prose .section-title,
 .section-prose .section-eyebrow { text-align: left; margin-left: 0; }
@@ -80,9 +79,6 @@ ul { list-style: none; }
 }
 .section-prose .section-eyebrow,
 .section-eyebrow.text-left { text-align: left; }
-.section-eyebrow.eyebrow-light {
-  color: var(--color-accent-light);
-}
 .section-title {
   font-family: var(--font-heading);
   font-size: 2.25rem;
@@ -93,7 +89,6 @@ ul { list-style: none; }
   line-height: 1.25;
 }
 .section-title.text-left { text-align: left; }
-.section-title.light { color: var(--color-white); }
 .section-subtitle {
   text-align: center;
   color: var(--color-text-light);
@@ -102,9 +97,6 @@ ul { list-style: none; }
   font-size: 1.1rem;
   line-height: 1.7;
 }
-.section-subtitle.light { color: rgba(255,255,255,0.85); }
-.section-dark .section-title,
-.section-dark .section-subtitle { color: var(--color-white); }
 .lead { font-size: 1.15rem; color: var(--color-text-light); line-height: 1.8; margin-bottom: 16px; }
 .byline {
   font-family: var(--font-heading);
@@ -473,58 +465,6 @@ ul { list-style: none; }
 .concept-card:hover .concept-link {
   gap: 8px;
 }
-
-/* ===== Idea Cards (home: Core Ideas) ===== */
-.idea-card {
-  display: block;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
-  padding: 40px 36px;
-  border-radius: var(--radius-lg);
-  text-decoration: none;
-  color: inherit;
-  transition: all var(--transition);
-  -webkit-tap-highlight-color: transparent;
-}
-.idea-card:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.25);
-  transform: translateY(-2px);
-  color: inherit;
-}
-.idea-number {
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--color-accent-light);
-  letter-spacing: 0.1em;
-  margin-bottom: 16px;
-}
-.idea-card h3 {
-  font-family: var(--font-heading);
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--color-white);
-  margin-bottom: 14px;
-  line-height: 1.25;
-}
-.idea-card p {
-  font-size: 0.98rem;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.78);
-  margin-bottom: 18px;
-}
-.idea-link {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-accent-light);
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  transition: gap var(--transition);
-  letter-spacing: 0.02em;
-}
-.idea-card:hover .idea-link { gap: 10px; }
 
 /* ===== Principle Cards (home: top of page) ===== */
 .principles-grid { margin-top: 8px; }
@@ -933,8 +873,6 @@ ul { list-style: none; }
   .section-subtitle { margin-bottom: 40px; }
   .grid-2 { grid-template-columns: 1fr; }
   .resources-grid { grid-template-columns: 1fr; }
-  .idea-card { padding: 32px 28px; }
-  .idea-card h3 { font-size: 1.35rem; }
   .nav-toggle { display: flex; }
   .nav-links {
     position: fixed;
@@ -968,7 +906,6 @@ ul { list-style: none; }
   .philosophy-card,
   .service-card,
   .concept-card,
-  .idea-card,
   .resource-card { padding: 28px 22px; }
   .section-title { font-size: 1.65rem; }
   .section-prose p { font-size: 1rem; }
