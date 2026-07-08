@@ -593,6 +593,34 @@ ul { list-style: none; }
 }
 .idea-card:hover .idea-link { gap: 10px; }
 
+/* ===== Principle Cards (home: top of page) ===== */
+.principles-grid { margin-top: 8px; }
+.principle-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+.principle-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.principle-number {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+.principle-text {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
 /* ===== Resource Cards ===== */
 .resources-grid {
   display: grid;
